@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.box{
+  height: 80px;
+  width: 80px;
+  background: blue;
+}
+.box,
+#checkbox{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#checkbox:checked ~ .box{
+  background: red;
+}
+.test1, .test4, .test5{
+  color: rgb(0, 255, 76);
+}
+.test1:hover ~ .test2{
+  font-size: 2em;
+}
